@@ -4,50 +4,52 @@
     android:gravity="center"
     android:padding="24dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Login"
-        android:textSize="26sp"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:layout_marginBottom="24dp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_marginBottom="32dp"
+        android:textColor="@android:color/black" />
 
     <EditText
-        android:id="@+id/emailLogin"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
         android:padding="12dp"
         android:background="@android:drawable/edit_text" />
 
     <EditText
-        android:id="@+id/passwordLogin"
-        android:hint="Password"
-        android:inputType="textPassword"
+        android:id="@+id/passwordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
         android:padding="12dp"
         android:background="@android:drawable/edit_text"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/btnLogin"
-        android:text="Login"
-        android:layout_marginTop="16dp"
+        android:id="@+id/loginButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="24dp" />
 
     <TextView
-        android:id="@+id/goToRegister"
-        android:text="Don’t have an account? Register"
-        android:textSize="14sp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/registerRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Register here"
         android:textColor="@color/black"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_marginTop="16dp" />
+
 </LinearLayout>

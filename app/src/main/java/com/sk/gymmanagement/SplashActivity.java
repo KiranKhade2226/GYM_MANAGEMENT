@@ -8,14 +8,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
+    private static final int SPLASH_SCREEN_TIMEOUT = 2000; // 2 seconds
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(SplashActivity.this, LoginActivity.class));
+            // After splash, go to Login screen
+            Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
+            startActivity(intent);
             finish();
-        }, 3000); // 3 seconds
+        }, SPLASH_SCREEN_TIMEOUT);
     }
 }
