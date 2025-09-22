@@ -27,6 +27,8 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         goToRegister = findViewById(R.id.goToRegister);
 
+//        HELLO
+
         mAuth = FirebaseAuth.getInstance();
 
         btnLogin.setOnClickListener(v -> {
